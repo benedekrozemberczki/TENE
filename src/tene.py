@@ -12,8 +12,8 @@ class TENE(object):
     def __init__(self, X, T, args):
         """
         Set up model and weights.
-        :param A: Adjacency target matrix. (Sparse Scipy matrix.)
-        :param X: Feature matrix.
+        :param X: Adjacency target matrix. (Sparse Scipy matrix.)
+        :param T: Feature matrix.
         :param args: Arguments object for model.
         """
         self.X = X
@@ -52,7 +52,7 @@ class TENE(object):
 
     def update_C(self):
         """
-        Update feature basis.
+        Update transformation matrix.
         """
         enum = self.Q.T.dot(self.U)
         denom = self.C.dot(self.U.T.dot(self.U))
@@ -70,7 +70,7 @@ class TENE(object):
 
     def update_Q(self):
         """
-        Update features.
+        Update feature bases.
         """
         enum = self.args.alpha*self.U.dot(self.C.T)+self.args.beta*self.T.dot(self.V)
         denom = self.args.alpha*self.Q+self.args.beta*self.Q.dot(self.V.T.dot(self.V))
