@@ -1,15 +1,15 @@
-# TENE
+TENE
 ============================================
 <p align="justify">
 A sparsity aware implementation of "Enhanced Network Embedding with Text Information". Network embedding aims at learning the low dimensional and continuous vector representation for each node in networks, which is useful in many real applications. While most existing network embedding methods only focus on the network structure, the rich text information associated with nodes, which is often closely related to network structure, is widely neglected. Thus, how to effectively incorporate text information into network embedding is a problem worth studying. To solve the problem, we propose a Text Enhanced Network Embedding (TENE) method under the framework of non-negative matrix factorization to integrate network structure and text information together. We explore the consistent relationship between node representations and text cluster structure to make the network embedding more informative and discriminative. TENE learns the representations of nodes under the guidance of both proximity matrix which captures the network structure and text cluster membership matrix derived from clustering for text information. We evaluate the quality of network embedding on the task of multi-class classification of nodes. Experimental results on all three real-world datasets show the superior performance of TENE compared with baselines.
 </p>
 <div style="text-align:center"><img src ="fscnmf.png" ,width=720/></div>
 
-This repository provides an implementation for FSCNMF as described in the paper:
-> FSCNMF: Fusing Structure and Content via Non-negative Matrix Factorization for Embedding Information Networks.
-> Sambaran Bandyopadhyay, Harsh Kara, Aswin Kannan and M N Murty
-> arXiv, 2018.
->https://arxiv.org/pdf/1804.05313.pdf
+This repository provides an implementation for TENE as described in the paper:
+> Enhanced Network Embedding with Text Information.
+> Shuang Yang, Bo Yang 
+> ICPR, 2018.
+> https://ieeexplore.ieee.org/abstract/document/8545577
 
 
 ### Requirements
