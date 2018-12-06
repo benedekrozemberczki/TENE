@@ -60,7 +60,7 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
 ```
   --edge-path    STR        Input graph path.           Default is `input/chameleon_edges.csv`.
   --feature-path STR        Input Features path.        Default is `input/chameleon_features.json`.
-  --output-path  STR        Embedding path.             Default is `output/chameleon_fscnmf.csv`.
+  --output-path  STR        Embedding path.             Default is `output/chameleon_tene.csv`.
 ```
 
 #### Model options
@@ -70,13 +70,8 @@ Learning of the embedding is handled by the `src/main.py` script which provides 
   --dimensions     INT         Number of embeding dimensions.                     Default is 32.
   --order          INT         Order of adjacency matrix powers.                  Default is 3.
   --iterations     INT         Number of power interations.                       Default is 500.
-  --alpha_1        FLOAT       Alignment parameter for adjacency matrix.          Default is 1000.0.
-  --alpha_2        FLOAT       Adjacency basis regularization.                    Default is 1.0.
-  --alpha_3        FLOAT       Adjacency features regularization.                 Default is 1.0.
-  --beta_1         FLOAT       Alignment parameter for feature matrix.            Default is 1000.0.
-  --beta_2         FLOAT       Attribute basis regularization .                   Default is 1.0.
-  --beta_3         FLOAT       Attribute feature regularization.                  Default is 1.0.
-  --gamma          FLOAT       Embedding mixing parameter.                        Default is 0.5.  
+  --alpha          FLOAT       Alignment parameter for feature matrix.            Default is 1.0.
+  --beta           FLOAT       Alignment parameter for feature-node embeddings.   Default is 1.0.
   --lower-control  FLOAT       Overflow control parameter.                        Default is 10**-15.  
 ```
 
@@ -95,15 +90,8 @@ Creating an FSCNMF embedding of the default dataset with 128 dimensions and appr
 python src/main.py --dimensions 128 --order 1
 ```
 
-Creating an FSCNMF embedding of the default dataset with asymmetric mixing.
-
-```
-python src/main.py --gamma 0.1
-```
-
 Creating an embedding of an other dense structured dataset the `Wikipedia Giraffes`. Saving the output in a custom folder.
 
 ```
-python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_fscnmf.csv --features dense
+python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/giraffe_features.csv --output-path output/giraffe_tene.csv --features dense
 ```
-
