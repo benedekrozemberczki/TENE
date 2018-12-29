@@ -17,55 +17,55 @@ def parameter_parser():
     parser = argparse.ArgumentParser(description = "Run TENE.")
 
 
-    parser.add_argument('--edge-path',
-                        nargs = '?',
-                        default = './input/chameleon_edges.csv',
-	                help = 'Edge list csv.')
+    parser.add_argument("--edge-path",
+                        nargs = "?",
+                        default = "./input/chameleon_edges.csv",
+	                help = "Edge list csv.")
 
-    parser.add_argument('--feature-path',
-                        nargs = '?',
-                        default = './input/chameleon_features.json',
-	                help = 'Node features csv.')
+    parser.add_argument("--feature-path",
+                        nargs = "?",
+                        default = "./input/chameleon_features.json",
+	                help = "Node features csv.")
 
-    parser.add_argument('--output-path',
-                        nargs = '?',
-                        default = './output/chameleon_tene.csv',
-	                help = 'Target embedding csv.')
+    parser.add_argument("--output-path",
+                        nargs = "?",
+                        default = "./output/chameleon_tene.csv",
+	                help = "Target embedding csv.")
 
-    parser.add_argument('--features',
-                        nargs = '?',
-                        default = 'sparse',
-	                help = 'Feature matrix structure.')
+    parser.add_argument("--features",
+                        nargs = "?",
+                        default = "sparse",
+	                help = "Feature matrix structure.")
 
-    parser.add_argument('--dimensions',
+    parser.add_argument("--dimensions",
                         type = int,
                         default = 32,
-	                help = 'Number of dimensions. Default is 32.')
+	                help = "Number of dimensions. Default is 32.")
 
-    parser.add_argument('--order',
+    parser.add_argument("--order",
                         type = int,
                         default = 2,
-	                help = 'Order of approximation. Default is 2.')
+	                help = "Order of approximation. Default is 2.")
 
-    parser.add_argument('--iterations',
+    parser.add_argument("--iterations",
                         type = int,
                         default = 500,
-	                help = 'Number of iterations. Default is 500.')
+	                help = "Number of iterations. Default is 500.")
 
-    parser.add_argument('--alpha',
+    parser.add_argument("--alpha",
                         type = float,
                         default = 1.0,
-	                help = 'Alignment parameter for adjacency matrix. Default is 1.0.')
+	                help = "Alignment parameter for adjacency matrix. Default is 1.0.")
 
-    parser.add_argument('--beta',
+    parser.add_argument("--beta",
                         type = float,
                         default = 1.0,
-	                help = 'Alignment parameter for feature matrix. Default is 1.0.')
+	                help = "Alignment parameter for feature matrix. Default is 1.0.")
 
-    parser.add_argument('--lower-control',
+    parser.add_argument("--lower-control",
                         type = float,
                         default = 10**-15,
-	                help = 'Numeric overflow control. Default is 10**-15.')
+	                help = "Numeric overflow control. Default is 10**-15.")
     
     return parser.parse_args()
 
