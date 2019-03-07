@@ -8,6 +8,7 @@ from texttable import Texttable
 class TENE(object):
     """
     Enhanced Network Embedding with Text Information Abstract Class.
+    For details see https://ieeexplore.ieee.org/document/8545577.
     """
     def __init__(self, X, T, args):
         """
