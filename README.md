@@ -1,5 +1,4 @@
-TENE 	<img src="https://img.shields.io/badge/stars-10+-blue.svg"/>
-	<img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
+TENE ![GitHub stars](https://img.shields.io/github/stars/benedekrozemberczki/TENE.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/benedekrozemberczki/TENE.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/benedekrozemberczki/TENE.svg?color=blue&style=plastic)
 ============================================
 <p align="justify">
 	
