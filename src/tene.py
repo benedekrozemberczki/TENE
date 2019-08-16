@@ -1,8 +1,8 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 from tqdm import tqdm
-from numpy.linalg import inv
 from scipy import sparse
+from numpy.linalg import inv
 from texttable import Texttable
 
 class TENE(object):
