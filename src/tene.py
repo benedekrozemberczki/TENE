@@ -50,7 +50,6 @@ class TENE(object):
         self.V = np.multiply(self.V,enum/denom)
         self.V[self.V < self.args.lower_control] = self.args.lower_control
 
-
     def update_C(self):
         """
         Update transformation matrix.
