@@ -117,7 +117,6 @@ def read_sparse_features(feature_path):
     :param feature_path: Path to the JSON file.
     :return features: Feature sparse COO matrix.
     """
-
     features = json.load(open(feature_path))
     index_1 = [int(k) for k,v in features.items() for fet in v]
     index_2 = [int(fet) for k,v in features.items() for fet in v]
