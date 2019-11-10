@@ -1,5 +1,8 @@
+"""Running the TENE model."""
+
 from tene import TENE
-from helpers import parameter_parser, read_graph, read_features, read_sparse_features, tab_printer
+from helpers import parameter_parser, read_graph
+from helpers import read_features, read_sparse_features, tab_printer
 
 def learn_model(args):
     """
