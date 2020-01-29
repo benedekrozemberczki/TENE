@@ -8,6 +8,8 @@ A sparsity aware implementation of "Enhanced Network Embedding with Text Informa
 </p>
 <div style="text-align:center"><img src ="fscnmf.png" ,width=720/></div>
 
+The model is now also available in the package [Karate Club](https://github.com/benedekrozemberczki/karateclub).
+
 This repository provides an implementation for TENE as described in the paper:
 > Enhanced Network Embedding with Text Information.
 > Shuang Yang, Bo Yang 
