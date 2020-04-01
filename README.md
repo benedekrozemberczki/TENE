@@ -1,4 +1,4 @@
-TENE ![GitHub stars](https://img.shields.io/github/stars/benedekrozemberczki/TENE.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/benedekrozemberczki/TENE.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/benedekrozemberczki/TENE.svg?color=blue&style=plastic)
+TENE ![License](https://img.shields.io/github/license/benedekrozemberczki/TENE.svg?color=blue&style=plastic)
 ============================================
 
 	
