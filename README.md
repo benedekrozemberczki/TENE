@@ -1,4 +1,4 @@
-TENE ![License](https://img.shields.io/github/license/benedekrozemberczki/TENE.svg?color=blue&style=plastic)
+TENE ![License](https://img.shields.io/github/license/benedekrozemberczki/TENE.svg?color=blue&style=plastic) ![Astro](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fastronomer.ullaakut.eu%2Fshields%3Fowner%3Dbenedekrozemberczki%26name%3DTENE)
 ============================================
 
 	
