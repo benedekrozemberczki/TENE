@@ -105,3 +105,5 @@ $ python src/main.py --edge-path input/giraffe_edges.csv --feature-path input/gi
 **License**
 
 - [GNU](https://github.com/benedekrozemberczki/TENE/blob/master/LICENSE)
+
+--------------------------------------------------------------------------------
